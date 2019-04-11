@@ -27,77 +27,106 @@ import EditPost from "./components/posts/EditPost";
 
 // check for token
 if (localStorage.jwtToken) {
-  // set header
-  setAuthToken(localStorage.jwtToken);
-  // decode token
-  const decoded = jwt_decode(localStorage.jwtToken);
-  // setcurrent user
-  // console.log(decoded);
-  store.dispatch(setCuttentUser(decoded));
-  // check expired token
-  const currentTime = Date.now() / 1000;
-  if (decoded.exp < currentTime) {
-    // logout
-    store.dispatch(logoutUser());
-    // clear curretn user
-    // store.dispatch(clearCurrentUser());
-    // redirect
-    window.location.href = "/login";
-  }
+    // set header
+    setAuthToken(localStorage.jwtToken);
+    // decode token
+    const decoded = jwt_decode(localStorage.jwtToken);
+    // setcurrent user
+    // console.log(decoded);
+    store.dispatch(setCuttentUser(decoded));
+    // check expired token
+    const currentTime = Date.now() / 1000;
+    if (decoded.exp < currentTime) {
+        // logout
+        store.dispatch(logoutUser());
+        // clear curretn user
+        // store.dispatch(clearCurrentUser());
+        // redirect
+        window.location.href = "/login";
+    }
 }
 
 class App extends Component {
-  render() {
-    return (
-      <Provider store={store}>
-        <Router>
-          <div className="App">
-            <div className="container fixed-top px-0">
-              <NavBar />
-            </div>
-            <Route exact path="/" component={Landing} />
-            <div className="container">
-              <Route exact path="/login" component={Login} />
-              <Route exact path="/register" component={Register} />
+    render() {
+        return ( <
+            Provider store = { store } >
+            <
+            Router >
+            <
+            div className = "App" >
+            <
+            div className = "container fixed-top px-0" >
+            <
+            NavBar / >
+            <
+            /div> <
+            Route exact path = "/node-blog-cl"
+            component = { Landing }
+            /> <
+            div className = "container" >
+            <
+            Route exact path = "/node-blog-cl/login"
+            component = { Login }
+            /> <
+            Route exact path = "/node-blog-cl/register"
+            component = { Register }
+            />
 
-              <Switch>
-                <PrivateRouter exact path="/posts" component={Posts} />
-              </Switch>
+            <
+            Switch >
+            <
+            PrivateRouter exact path = "/node-blog-cl/posts"
+            component = { Posts }
+            /> < /
+            Switch >
 
-              <Switch>
-                <PrivateRouter exact path="/posts/add" component={AddPost} />
-              </Switch>
+            <
+            Switch >
+            <
+            PrivateRouter exact path = "/node-blog-cl/posts/add"
+            component = { AddPost }
+            /> < /
+            Switch >
 
-              <Switch>
-                <PrivateRouter exact path="/posts/:id" component={Post} />
-              </Switch>
+            <
+            Switch >
+            <
+            PrivateRouter exact path = "/node-blog-cl/posts/:id"
+            component = { Post }
+            /> < /
+            Switch >
 
-              <Switch>
-                <PrivateRouter
-                  exact
-                  path="/posts/edit/:id"
-                  component={EditPost}
-                />
-              </Switch>
+            <
+            Switch >
+            <
+            PrivateRouter exact path = "/posts/edit/:id"
+            component = { EditPost }
+            /> < /
+            Switch >
 
-              <Switch>
-                <PrivateRouter
-                  exact
-                  path="/categories"
-                  component={Categories}
-                />
-              </Switch>
+            <
+            Switch >
+            <
+            PrivateRouter exact path = "/categories"
+            component = { Categories }
+            /> < /
+            Switch >
 
-              <Route exact path="/not-found" component={NotFound} />
-            </div>
-            <div className="container-fluid px-0">
-              <Footer />
-            </div>
-          </div>
-        </Router>
-      </Provider>
-    );
-  }
+            <
+            Route exact path = "/not-found"
+            component = { NotFound }
+            /> < /
+            div > <
+            div className = "container-fluid px-0" >
+            <
+            Footer / >
+            <
+            /div> < /
+            div > <
+            /Router> < /
+            Provider >
+        );
+    }
 }
 
 export default App;
