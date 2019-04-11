@@ -50,7 +50,7 @@ class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <Router>
+        <BrowserRouter>
           <div className="App">
             <div className="container fixed-top px-0">
               <NavBar />
@@ -110,7 +110,7 @@ class App extends Component {
               <Footer />
             </div>
           </div>
-        </Router>
+        </BrowserRouter>
       </Provider>
     );
   }
