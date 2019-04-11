@@ -15,19 +15,19 @@ class NavBar extends Component {
     const authLinks = (
       <ul className="navbar-nav ml-auto">
         <li className="nav-item">
-          <Link className="nav-link text-dark" to="/node-blog-cl/posts">
+          <Link className="nav-link text-dark" to="/posts">
             Posts
           </Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link text-dark" to="/node-blog-cl/categories">
+          <Link className="nav-link text-dark" to="/categories">
             Categories
           </Link>
         </li>
         <li className="nav-item">
           <Link
             className="nav-link text-dark"
-            to="/node-blog-cl/logout"
+            to="/logout"
             onClick={this.logout}
           >
             Logout
@@ -39,12 +39,12 @@ class NavBar extends Component {
     const guestLinks = (
       <ul className="navbar-nav ml-auto">
         <li className="nav-item">
-          <Link className="nav-link text-dark" to="/node-blog-cl/register">
+          <Link className="nav-link text-dark" to="/register">
             Sign Up
           </Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link text-dark" to="/node-blog-cl/login">
+          <Link className="nav-link text-dark" to="/login">
             Login
           </Link>
         </li>
@@ -52,7 +52,7 @@ class NavBar extends Component {
     );
     return (
       <nav className="navbar navbar-expand-md navbar-dark ">
-        <Link className="navbar-brand text-dark" to="/node-blog-cl">
+        <Link className="navbar-brand text-dark" to="">
           Blog
         </Link>
         <button
