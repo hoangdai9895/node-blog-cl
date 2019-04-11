@@ -12,19 +12,19 @@ self.__precacheManifest = [
     "url": "/node-blog-cl/static/js/runtime~main.7d7c4e48.js"
   },
   {
-    "revision": "0e9faf6cc643986efd1b",
-    "url": "/node-blog-cl/static/js/main.0d143d78.chunk.js"
+    "revision": "2382df23a78f744c2b6c",
+    "url": "/node-blog-cl/static/js/main.36737034.chunk.js"
   },
   {
     "revision": "49981ba1d27495e7d701",
     "url": "/node-blog-cl/static/js/2.4f90f9da.chunk.js"
   },
   {
-    "revision": "0e9faf6cc643986efd1b",
+    "revision": "2382df23a78f744c2b6c",
     "url": "/node-blog-cl/static/css/main.cb8d2955.chunk.css"
   },
   {
-    "revision": "3e5c4960318c706a150af0ea2a5e3e95",
+    "revision": "e91e050bbfdd993559597c23e7cd8b40",
     "url": "/node-blog-cl/index.html"
   }
 ];
