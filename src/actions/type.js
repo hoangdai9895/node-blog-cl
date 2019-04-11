@@ -16,4 +16,4 @@ export const UPDATE_POST = 'UPDATE_POST';
 export const ADD_COMMENT = 'ADD_COMMENT';
 export const DELETE_COMMENT = 'DELETE_COMMENT'
 
-export const URL = 'https://node-blog-sv.herokuapp.com/'
+export const URL = 'https://node-blog-sv.herokuapp.com'
