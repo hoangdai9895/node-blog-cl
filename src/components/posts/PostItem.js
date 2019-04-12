@@ -20,7 +20,7 @@ class PostItem extends Component {
             <h5 className="card-title">{post.title}</h5>
             <p className="card-text">{post.author}</p>
             <Link
-              to={`/posts/${post._id}`}
+              to={`/posts/detail/${post._id}`}
               className="btn btn-primary btn-block"
             >
               View Detail

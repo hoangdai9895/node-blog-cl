@@ -10,7 +10,7 @@ const PrivateRouter = ({ component: Component, auth, ...rest }) => ( <
             Component {...props }
             />
         ) : ( <
-            Redirect to = "/node-blog-cl/login" / >
+            Redirect to = "/login" / >
         )
     }
     />

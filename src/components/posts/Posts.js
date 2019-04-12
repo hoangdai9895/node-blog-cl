@@ -13,11 +13,11 @@ class Posts extends Component {
   render() {
     const { posts, loading } = this.props.posts;
     // console.log(posts, loading);
-    let PostContent;
+    let PostsContent;
     if (loading) {
-      PostContent = <Loading />;
+      PostsContent = <Loading />;
     } else {
-      PostContent = posts.map((post, key) => (
+      PostsContent = posts.map((post, key) => (
         <PostItem post={post} key={key} />
       ));
     }
@@ -27,11 +27,11 @@ class Posts extends Component {
           <h1 className="text-center display-4 text-uppercase d-block w-100">
             All posts
           </h1>
-          <Link to="/posts/add" className="btn btn-primary">
-            <i className="fas fa-plus mr-1" /> Add Post
+          <Link className="btn btn-primary" to="/posts/add">
+            Add Post
           </Link>
         </div>
-        <div className="row">{PostContent}</div>
+        <div className="row">{PostsContent}</div>
       </div>
     );
   }

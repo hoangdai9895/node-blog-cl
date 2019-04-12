@@ -69,7 +69,11 @@ class App extends Component {
               </Switch>
 
               <Switch>
-                <PrivateRouter exact path="/posts/:id" component={Post} />
+                <PrivateRouter
+                  exact
+                  path="/posts/detail/:id"
+                  component={Post}
+                />
               </Switch>
 
               <Switch>
