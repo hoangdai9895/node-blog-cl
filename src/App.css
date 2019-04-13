@@ -34,7 +34,7 @@
 
 .landing {
     position: relative;
-    background: url('./img/landing1.jpg') no-repeat;
+    background: url("./img/landing1.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -51,9 +51,30 @@
 }
 
 .table thead th {
-    vertical-align: middle!important;
+    vertical-align: middle !important;
 }
 
 .table td {
-    vertical-align: middle!important;
+    vertical-align: middle !important;
+}
+
+.login,
+.register {
+    margin: 150px 0 100px 0;
+}
+
+.posts {
+    margin: 100px auto;
+}
+
+.fixed-top {
+    border-bottom: 1px solid #ccc;
+}
+
+.table {
+    margin: 50px 0 0 0;
+}
+
+.nav-bar-all {
+    border-bottom: 1px solid #ccc;
 }

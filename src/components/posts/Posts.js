@@ -22,7 +22,7 @@ class Posts extends Component {
       ));
     }
     return (
-      <div className="contaier mt-5">
+      <div className="container mt-5 ">
         <div className="row">
           <h1 className="text-center display-4 text-uppercase d-block w-100">
             All posts

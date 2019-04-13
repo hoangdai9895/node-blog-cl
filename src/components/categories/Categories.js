@@ -71,7 +71,7 @@ class Categories extends Component {
           <h1 className="text-center display-4 text-uppercase my-3">
             Categories
           </h1>
-          <table className="table">
+          <table className="table table-hover table-bordered">
             <thead>
               <tr>
                 <th scope="col">Id</th>
